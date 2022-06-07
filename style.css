@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: pink;
+    display: grid;
+    grid-auto-flow: column;
+    width: 60%;
+    margin-left: 20%;
+    align-items: center;
+    border-radius: 10px;
+}
+.logo{
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    font-family: caveat;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    color: green;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148901163.jpg?w=2000");
+    background-size: cover;
+    padding-top: 20px;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    margin-left: 5%;
+    color: aliceblue;
+    grid-area: a;
+}
+.text>h1,h2, h3{
+    margin-bottom: 50px;
+    font-family: caveat;
+}
+.image{
+    grid-area: b;
+}
+.front{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-areas: 'a,b';
+}
